@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Milos252's portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="header">
+            <img
+                src="img/Logo Png.png"
+                alt="logo"
+                id="header-img"
+                onclick="logoClick()"
+            />
+            <ul>
+                <li><a href="#pocetna">Početna</a></li>
+                <li><a href="#projekti">Projekti</a></li>
+                <li><a href="">Nesto</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="pocetna">
+                <img src="img/Logo Png.png" alt="" />
+                <div id="tekst">
+                    <h3>O MENI</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Hic suscipit, totam debitis cumque eius
+                        dignissimos consequuntur. Tempore explicabo laboriosam
+                        saepe veniam odit ullam, dignissimos inventore
+                        cupiditate incidunt illo quos. Culpa.
+                    </p>
+                </div>
+            </div>
+            <div id="projekti">
+                <div id="projekti-dugmad">
+                    <button data-category="sve">
+                        Sve
+                    </button>
+                    <button class="blue" data-category="vjezbe">
+                        Vjezbe
+                    </button>
+                    <button class="red" data-category="kurs">
+                        Kurs
+                    </button>
+                </div>
+                <div id="projekti-slike">
+                    <a
+                        href="../To Do List/index.html"
+                        target="_blank"
+                        data-category="vjezbe"
+                        class="portfolio-single-item blue"
+                        ><img src="../To Do List/ToDo.png" alt=""
+                    /></a>
+                    <a
+                        href="../Vjezba 11/index.html"
+                        target="_blank"
+                        data-category="vjezbe, kurs"
+                        class="portfolio-single-item blue"
+                        ><img src="../Vjezba 11/Vjezba11.png" alt=""
+                    /></a>
+                    <a
+                        href="../Pijaca/index.html"
+                        target="_blank"
+                        data-category="kurs"
+                        class="portfolio-single-item red"
+                        ><img src="../Pijaca/Pijaca.png" alt=""
+                    /></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+        <script src="script.js"></script>
+    </body>
+</html>

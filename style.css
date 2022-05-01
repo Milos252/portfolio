@@ -1,0 +1,132 @@
+* {
+    font-size: 20px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: lightgray;
+    position: fixed;
+    display: flex;
+    z-index: 200;
+    opacity: 80%;
+}
+
+.header img {
+    width: 75px;
+    height: 75px;
+    padding-left: 30px;
+    padding-top: 15px;
+    user-select: none;
+}
+
+.header ul {
+    width: 30%;
+    height: 100px;
+    margin: 0 0 0 auto;
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header ul a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(110, 110, 110);
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.header ul li {
+    margin-right: auto;
+    font-weight: bold;
+}
+
+#pocetna {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 750px;
+    width: 100%;
+    background-color: rgb(143, 143, 143);
+}
+
+#pocetna img {
+    width: 35%;
+    height: 60%;
+    padding: 15px;
+    user-select: none;
+    margin: 0 auto;
+    filter: drop-shadow(5px 5px 5px rgb(82, 82, 82));
+    z-index: 100;
+}
+
+#tekst h3 {
+    text-align: center;
+}
+
+#tekst p {
+    text-align: justify;
+}
+
+#tekst {
+    width: 40%;
+    margin: auto;
+}
+
+#projekti {
+    width: 100%;
+}
+
+#projekti-dugmad {
+    display: flex;
+    justify-content: center;
+}
+
+#projekti-dugmad button {
+    margin: 15px;
+    padding: 7px;
+    border: 2px solid rgb(110, 110, 110);
+    border-radius: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+#projekti-slike {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#projekti-slike img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid grey;
+    margin: 15px;
+}
+
+.red {
+    background-color: lightcoral;
+}
+
+.blue {
+    background-color: lightblue;
+}
