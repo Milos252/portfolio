@@ -62,9 +62,10 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 
-.header i {
+.header button {
     display: none;
-    font-size: 30px;
+    background: none;
+    border: none;
 }
 
 #pocetna {
@@ -163,7 +164,7 @@ body::-webkit-scrollbar {
         display: none;
     }
 
-    .header i {
+    .header button {
         display: block;
         position: absolute;
         right: 10%;
