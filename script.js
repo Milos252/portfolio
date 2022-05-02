@@ -33,19 +33,19 @@ let naslovDugme = document.querySelector('.header button');
 naslovDugme.addEventListener('click', () => {
     let menu = document.querySelector('.header ul');
     let btn = document.querySelector('.header button');
-    let btns = document.querySelectorAll('.header ul li a')
+    let btns = document.querySelectorAll('.header ul li a');
 
     if (btn.innerText === 'MENU') {
         menu.style.display = 'block';
         btn.innerText = 'CLOSE';
-        btns.forEach(btn => {
-            btn.style.border = 'none'
+        btns.forEach((btn) => {
+            btn.style.border = 'none';
         });
     } else {
         menu.style.display = 'none';
         btn.innerText = 'MENU';
-        btns.forEach(btn => {
-            btn.style.border = '2px solid rgb(110, 110, 110)'
+        btns.forEach((btn) => {
+            btn.style.border = '2px solid rgb(110, 110, 110)';
         });
     }
 });
