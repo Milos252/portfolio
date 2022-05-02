@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
 }
 
 #naslovna h1 {
-    font-size: 4vw;
+    font-size: clamp(32px, 4vw, 4vw);
     font-weight: bold;
     color: rgb(126, 126, 126);
     font-family: 'Cairo', sans-serif;
@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
 }
 
 #naslovna p {
-    font-size: 6vw;
+    font-size: clamp(36px, 6vw, 6vw);
     font-weight: bold;
     color: rgb(126, 126, 126);
     font-family: 'Cairo', sans-serif;
