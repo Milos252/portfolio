@@ -213,6 +213,7 @@ button.blue {
     .header button {
         display: block;
         position: absolute;
+        color: white;
         right: 10%;
         top: 10%;
     }
