@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 #naslovna h1 {
     font-size: clamp(32px, 4vw, 4vw);
     font-weight: bold;
-    color: #0367A6;
+    color: #0367a6;
     font-family: 'Cairo', sans-serif;
     user-select: none;
 }
@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
 #naslovna p {
     font-size: clamp(36px, 6vw, 6vw);
     font-weight: bold;
-    color: #0367A6;
+    color: #0367a6;
     font-family: 'Cairo', sans-serif;
     user-select: none;
 }
@@ -136,14 +136,13 @@ body::-webkit-scrollbar {
 
 #projekti {
     width: 100%;
-    background-color: #03588C;
+    background-color: #03588c;
 }
 
 #projekti-dugmad {
     display: flex;
     justify-content: center;
 }
-
 
 #projekti-dugmad button {
     margin: 15px;
@@ -185,14 +184,12 @@ body::-webkit-scrollbar {
 button.blue {
     background-color: #383838;
     color: white;
-} */ 
-
-
+} */
 
 #contact-bg {
     height: 500px;
     width: 100%;
-    background-color: #0367A6;
+    background-color: #0367a6;
     color: white;
     display: flex;
     justify-content: center;
@@ -216,51 +213,47 @@ button.blue {
     flex-direction: column;
 }
 
-#contact form input, textarea {
+#contact form input,
+textarea {
     border: none;
-    border-bottom: 1px solid #0367A6;
+    border-bottom: 1px solid #0367a6;
 }
 
-textarea::-webkit-scrollbar{
+textarea::-webkit-scrollbar {
     width: 4px;
 }
 
-textarea::-webkit-scrollbar-thumb{
-    background-color: #0367A6;
+textarea::-webkit-scrollbar-thumb {
+    background-color: #0367a6;
 }
 
-#contact form input:focus, textarea:focus {
+#contact form input:focus,
+textarea:focus {
     border-bottom: 2px solid #022340;
     outline: none;
 }
 
 #contact h1 {
-    color: #0367A6;
+    color: #0367a6;
     text-align: center;
 }
 
-#center{
+#center {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
 }
 
-#center button{
+#center button {
     color: white;
     padding: 3px;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(to right, #0367A6, #024873);
+    background: linear-gradient(to right, #0367a6, #024873);
     width: 50%;
     cursor: pointer;
     max-width: 200px;
-}
-
-#success {
-    color: #0367A6;
-    font-size: 0.85em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -294,7 +287,7 @@ textarea::-webkit-scrollbar-thumb{
         top: 10%;
     }
 
-    #contact{
+    #contact {
         width: 90%;
     }
 }

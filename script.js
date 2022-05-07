@@ -49,25 +49,3 @@ naslovDugme.addEventListener('click', () => {
         });
     }
 });
-
-let validateForm = () => {
-    const nameInput = document.querySelector('#ime').value;
-    const email = document.querySelector('#email').value;
-    const message = document.querySelector('#poruka').value;
-    let success = document.querySelector('#success');
-    let error = new Boolean(true);
-
-    if (nameInput.length < 1) {
-        alert('Moraš unijeti ime!');
-    }
-
-    if (email.length < 1) {
-        alert('Moraš unijeti email!');
-    }
-
-    if (message.length < 1) {
-        alert('Moraš unijeti poruku!');
-    }
-
-    success.innerText = 'Poslato!';
-};
