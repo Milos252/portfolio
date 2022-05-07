@@ -187,6 +187,82 @@ button.blue {
     color: white;
 } */ 
 
+
+
+#contact-bg {
+    height: 500px;
+    width: 100%;
+    background-color: #0367A6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact {
+    background-color: white;
+    padding: 0.5vh 2vw;
+    border-radius: 5px;
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form {
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+}
+
+#contact form input, textarea {
+    border: none;
+    border-bottom: 1px solid #0367A6;
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: #0367A6;
+}
+
+#contact form input:focus, textarea:focus {
+    border-bottom: 2px solid #022340;
+    outline: none;
+}
+
+#contact h1 {
+    color: #0367A6;
+    text-align: center;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#center button{
+    color: white;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #0367A6, #024873);
+    width: 50%;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+#success {
+    color: #0367A6;
+    font-size: 0.85em;
+}
+
 @media only screen and (max-width: 800px) {
     #tekst h3 {
         text-align: center;
@@ -217,10 +293,8 @@ button.blue {
         right: 10%;
         top: 10%;
     }
-}
 
-#contact {
-    height: 25%;
-    background-color: #0367A6;
-    color: white;
+    #contact{
+        width: 90%;
+    }
 }
