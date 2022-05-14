@@ -30,6 +30,21 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
+#webdev,
+#milos {
+    transition: all 0.5s ease;
+}
+
+.preanimated {
+    transform: translateY(-15px);
+    opacity: 0;
+}
+
+.animated {
+    opacity: 1;
+    transform: translateY(15px);
+}
+
 #naslovna h1 {
     font-size: clamp(32px, 4vw, 4vw);
     font-weight: bold;
@@ -115,6 +130,17 @@ body::-webkit-scrollbar {
     user-select: none;
     margin: 0 auto;
     z-index: 100;
+    transition: all 0.5s ease;
+}
+
+.animated-img {
+    transform: translateX(15px);
+    opacity: 1;
+}
+
+.preanimated-img {
+    transform: translateX(-15px);
+    opacity: 0;
 }
 
 #tekst h3 {
@@ -175,16 +201,6 @@ body::-webkit-scrollbar {
 .blue {
     border: 5px solid lightblue;
 }
-
-/* button.red {
-    background-color: #383838;
-    color: white;
-}
-
-button.blue {
-    background-color: #383838;
-    color: white;
-} */
 
 #contact-bg {
     height: 500px;

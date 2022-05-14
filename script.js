@@ -49,3 +49,13 @@ naslovDugme.addEventListener('click', () => {
         });
     }
 });
+
+let interval = setInterval(() => {
+    let milos = document.querySelector('#milos');
+    let webDev = document.querySelector('#webdev');
+    let img = document.querySelector('#pocetna img');
+
+    milos.className = 'animated';
+    webDev.className = 'animated';
+    img.className = 'animated-img';
+}, 150);
