@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 
 #naslovna {
     width: 100%;
-    height: 60%;
+    height: 100%;
     display: flex;
     background-image: url('img/background.jpg');
     background-size: cover;
@@ -70,6 +70,15 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     z-index: 200;
+    transition: all 0.5s ease;
+}
+
+#preanimated-header {
+    opacity: 0;
+
+}
+
+#animated-header{
     opacity: 80%;
 }
 

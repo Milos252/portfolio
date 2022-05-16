@@ -59,3 +59,9 @@ let interval = setInterval(() => {
     webDev.className = 'animated';
     img.className = 'animated-img';
 }, 150);
+
+let header = document.querySelector('.header')
+
+window.onscroll = () =>{
+    header.id = 'animated-header'
+}
