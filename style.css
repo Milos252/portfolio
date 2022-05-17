@@ -5,6 +5,8 @@
     font-size: 20px;
     font-family: 'Maven Pro', sans-serif;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-snap-type: y mandatory;
+    transition: all 0.3s ease;
 }
 
 html,
@@ -21,14 +23,17 @@ body::-webkit-scrollbar {
 }
 
 #naslovna {
+    scroll-snap-align: start;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     background-image: url('img/background.jpg');
     background-size: cover;
     justify-content: center;
     align-items: center;
 }
+
+
 
 #webdev,
 #milos {
@@ -75,10 +80,9 @@ body::-webkit-scrollbar {
 
 #preanimated-header {
     opacity: 0;
-
 }
 
-#animated-header{
+#animated-header {
     opacity: 80%;
 }
 
@@ -124,9 +128,10 @@ body::-webkit-scrollbar {
 
 #pocetna {
     display: flex;
+    scroll-snap-align: center;
     justify-content: space-between;
     align-items: center;
-    height: 75%;
+    height: 100vh;
     min-height: 500px;
     width: 100%;
     background-color: #024873;
@@ -152,7 +157,7 @@ body::-webkit-scrollbar {
     opacity: 0;
 }
 
-#tekst h3 {
+#tekst p span {
     text-align: center;
     font-size: 2vw;
     color: white;
@@ -170,6 +175,7 @@ body::-webkit-scrollbar {
 }
 
 #projekti {
+    scroll-snap-align: center;
     width: 100%;
     background-color: #03588c;
 }
@@ -212,7 +218,8 @@ body::-webkit-scrollbar {
 }
 
 #contact-bg {
-    height: 500px;
+    scroll-snap-align: center;
+    height: 100vh;
     width: 100%;
     background-color: #0367a6;
     color: white;
@@ -227,7 +234,7 @@ body::-webkit-scrollbar {
     padding: 0.5vh 2vw;
     border-radius: 5px;
     width: 50%;
-    height: 95%;
+
     display: flex;
     flex-direction: column;
 }
@@ -272,6 +279,7 @@ textarea:focus {
 
 #center button {
     color: white;
+    margin: 10px;
     padding: 3px;
     border: none;
     border-radius: 5px;
@@ -282,7 +290,7 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 800px) {
-    #tekst h3 {
+    #tekst p span {
         text-align: center;
         font-size: 15px;
     }
@@ -314,5 +322,32 @@ textarea:focus {
 
     #contact {
         width: 90%;
+    }
+
+    #pocetna {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pocetna img {
+        display: none;
+    }
+
+    #tekst {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tekst p span {
+        font-size: 22px;
+    }
+
+    #tekst p {
+        font-size: 17px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
