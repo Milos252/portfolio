@@ -21,9 +21,9 @@
                     onclick="logoClick()"
                 />
                 <ul>
-                    <li><a href="#naslovna">Početna</a></li>
-                    <li><a href="#pocetna">O meni</a></li>
-                    <li><a href="#projekti">Projekti</a></li>
+                    <li><a href="#naslovna">Home</a></li>
+                    <li><a href="#pocetna">About me</a></li>
+                    <li><a href="#projekti">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button><span>MENU</span></button>
@@ -37,52 +37,45 @@
                 <img src="img/Logo Png.png" alt="" class="preanimated-img" />
                 <div id="tekst">
                     <p>
-                        <span>O meni</span><br />
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Hic suscipit, totam debitis cumque eius
-                        dignissimos consequuntur. Tempore explicabo laboriosam
-                        saepe veniam odit ullam, dignissimos inventore
-                        cupiditate incidunt illo quos. Culpa. Lorem ipsum dolor
-                        sit, amet consectetur adipisicing elit. Accusamus non
-                        laborum, quis omnis tenetur commodi nobis et quasi earum
-                        inventore in reprehenderit, consequatur magnam
-                        blanditiis voluptatem aliquid neque illo distinctio!
+                        <span>About me</span><br />
+                        Hi,<br> My name is Miloš. I am a Front-End Web Developer.
+                        These are some of my projects.
                     </p>
                 </div>
             </div>
             <div id="projekti">
                 <div id="projekti-dugmad">
-                    <button data-category="sve">Sve</button>
-                    <button class="blue" data-category="vjezbe">Vjezbe</button>
-                    <button class="red" data-category="kurs">Kurs</button>
+                    <button data-category="sve">All</button>
+                    <button class="blue" data-category="vjezbe">Practice</button>
+                    <button class="red" data-category="kurs">Course</button>
                 </div>
                 <div id="projekti-slike">
                     <a
-                        href="To Do List/index.html"
+                        href="https://milos252.github.io/bank/index.html"
                         target="_blank"
                         data-category="vjezbe"
                         class="portfolio-single-item"
-                        ><img class="blue" src="To Do List/ToDo.png" alt=""
+                        ><img class="blue" src="Banka/banka.jpg" alt=""
                     /></a>
                     <a
                         href="Vjezba 11/index.html"
                         target="_blank"
-                        data-category="vjezbe, kurs"
-                        class="portfolio-single-item"
-                        ><img class="blue" src="Vjezba 11/Vjezba11.png" alt=""
-                    /></a>
-                    <a
-                        href="Pijaca/index.html"
-                        target="_blank"
                         data-category="kurs"
                         class="portfolio-single-item"
-                        ><img class="red" src="Pijaca/Pijaca.png" alt=""
+                        ><img class="red" src="Vjezba 11/Vjezba11.png" alt=""
+                    /></a>
+                    <a
+                        href="https://milos252.github.io/clock"
+                        target="_blank"
+                        data-category="vjezbe"
+                        class="portfolio-single-item"
+                        ><img class="blue" src="Clock/clock.png" alt=""
                     /></a>
                 </div>
             </div>
             <div id="contact-bg">
                 <div id="contact">
-                    <h1>Kontaktiraj me</h1>
+                    <h1>Contact me</h1>
                     <form
                         action="https://formsubmit.co/758626ba8e9f43e9ad9650829a77975d"
                         method="POST"
@@ -99,7 +92,7 @@
                         />
                         <input
                             type="text"
-                            placeholder="Unesi ime..."
+                            placeholder="Name"
                             id="ime"
                             name="name"
                             required
@@ -109,7 +102,7 @@
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="Unesi mail..."
+                            placeholder="Email"
                             required
                         />
 
@@ -119,12 +112,12 @@
                             id="poruka"
                             cols="30"
                             rows="10"
-                            placeholder="Napiši poruku..."
+                            placeholder="Message"
                             required
                         ></textarea>
 
                         <div id="center">
-                            <button type="submit">Pošalji poruku</button>
+                            <button type="submit">Send message</button>
                         </div>
                     </form>
                 </div>
